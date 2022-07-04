@@ -1,0 +1,76 @@
+baseurl = "/"
+title = "Tronikel"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+enableGitInfo = false
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "02-01-2006"
+  dateformNumTime = "02-01-2006 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Tronikel's personal website"
+  keywords = "homepage, development, programming, tronikel"
+  images = [""]
+
+  homeSubtitle = "Software Engineer // Frontend developer"
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  [params.footer]
+    trademark = false
+    rss = false
+    copyright = false
+    author = false
+  
+  [author]
+    name = "Tronikel"
+
+[languages]
+  [languages.en]
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "$ cd /home/"
+      logoHomeLink = "/"
+
+  # You can create a language based menu
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "/about"
+        url = "/about"
+
+      [[languages.en.menu.main]]
+        identifier = "/uses"
+        name = "/uses"
+        url = "/uses"
+
+      [[languages.en.menu.main]]
+        identifier = "/posts"
+        name = "/posts"
+        url = "/posts"
+
+  [[params.social]]
+    name = "telegram"
+    url = "https://t.me/tronikel"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/Tronikelis"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/tronikel"
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+  suffixes = ["asc"]
