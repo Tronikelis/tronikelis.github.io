@@ -6,4 +6,4 @@ aliases = ["about", "contact"]
   name = "Tronikel"
 +++
 
-Very nice hugo template
+Test
